@@ -9,6 +9,9 @@ export class Organization extends BaseEntity {
   @Column({ unique: true })
   email: string;
 
+  @Column({ name: 'password_hash' })
+  passwordHash: string;
+
   @Column({ name: 'api_key', unique: true })
   apiKey: string;
 
